@@ -1,0 +1,76 @@
+// General styles
+html {
+  box-sizing: border-box;
+  width: 98%;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: $font-family;
+  background-color: $color-fondo;
+  color: $color-texto-principal;
+}
+
+header {
+  color: $color-texto-principal;
+}
+
+footer {
+  border-top: 1px solid $color-texto-principal;
+  margin-left: 1%;
+  margin-right: 1%;
+}
+
+.titulo-cabecera {
+  color: $color-texto-secundario;
+  font-size: calc(2em + 0.5vw);
+  font-style: italic;
+}
+
+/* Estilos para los enlaces */
+a {
+  color: $color-texto-principal;
+  text-decoration: none !important;
+}
+
+a:hover {
+  color: $color-texto-secundario;
+  text-shadow: 0 0 0.2em $color-texto-principal;
+}
+
+// Estilo para la página activa
+.active {
+  border: $color-texto-secundario medium solid;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+.active:hover {
+  color: $color-texto-principal;
+  text-shadow: none;
+}
+
+// Componentes extraidos de la librería Tailwind
+
+.enlace-boton {
+  @apply px-4 py-2 bg-blue-500 text-white rounded-full;
+}
+
+.enlace-boton:hover {
+  @apply bg-blue-700 text-black;
+}
+
+.caja {
+  @apply text-base text-center m-4 p-2 bg-blue-200 text-black;
+}
+
+.tarjeta {
+  @apply max-w-sm mx-auto bg-white rounded-lg p-4;
+}

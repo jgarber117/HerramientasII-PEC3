@@ -1,0 +1,18 @@
+// Estilos de la página 'biografia.html'
+
+.lista-biografia {
+  text-align: left;
+  border-top: 1px solid $color-texto-secundario;
+  border-bottom: 1px solid $color-texto-secundario;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.lista-item-biografia {
+  list-style-type: none;
+  list-style-image: url('../images/check.png');
+  text-align: left;
+  margin-left: 40px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
